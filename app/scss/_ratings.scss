@@ -1,0 +1,51 @@
+.ratings {
+    
+
+
+    li {
+        color: var(--clr-primary-700);
+        background: var(--clr-neutral-400);
+        font-weight: 700;
+        padding: 1rem 0 .1rem 0;
+        text-align: center;
+        max-width: 25rem;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        border-radius: 1em;
+        
+
+        @media (min-width: 50em) {
+            display: flex;
+            align-content: center;
+            padding: .75rem 2rem;
+            
+            
+
+            &::before {
+                margin: 0 1.5rem 0 0 ;   
+            }
+            
+            &:first-of-type {
+                transform: translateX(-2rem);
+            }
+
+            // &:nth-of-type(2) {
+            //     padding: auto;
+            // }
+
+            &:last-of-type {
+                transform: translateX(2rem);
+            }
+            
+           
+        }
+        
+    }
+
+    img {
+        display: inline-block;
+        margin: 0 .125rem;
+    }
+    
+}
